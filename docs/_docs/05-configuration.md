@@ -902,20 +902,12 @@ author:
   location : "Somewhere, USA"
 ```
 
-Author links are all optional, include the ones you want visible under the `author.links` array.
-
-| Name | Description |
-| --- | --- |
-| **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
-
 ```yaml
 author:
-  name: "Your Name"
+  name: "Pippo Inzaghi"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person." # Note: Markdown is allowed
-  location: "Somewhere"
+  bio: "I am an NOT an **amazing** person." # Note: Markdown is allowed
+  location: "Leiden"
   links:
     - label: "Made Mistakes"
       icon: "fas fa-fw fa-link"
