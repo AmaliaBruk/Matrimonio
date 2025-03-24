@@ -113,8 +113,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Amalia AMORE MI00O <3"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Amalia & Bruk"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Lavori in corso ..."
   location         : "Vinci, Florence (Italy)"
   email            : innocenti.nur@gmai.com
