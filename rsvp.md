@@ -1,6 +1,6 @@
 ---
 title: Alcune info generali ;)
-permalink: /infobaby/
+permalink: /noway/
 
 ---
 

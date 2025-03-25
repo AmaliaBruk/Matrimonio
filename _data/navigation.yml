@@ -1,8 +1,10 @@
 # main links
 main:
-  - title: "General info"
+  - title: "Davvero?"
     url: /infobaby/
-  - title: "Location"
-    url: https://www.streda.it/
+  - title: "Programma"
+    url: /agenda/
+  - title: "RSVP"
+    url: /rsvp/
   - title: "La nostra storia"
     url: /us/
