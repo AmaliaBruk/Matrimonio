@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "General info"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://www.stefanopaladini.it/consigli-utili-sul-matrimonio/10-piccoli-consigli-per-un-matrimonio-felice/
   - title: "Location"
     url: https://www.streda.it/
-    
+  - title: "La nostra storia"
+    # url:
+  - title: " "

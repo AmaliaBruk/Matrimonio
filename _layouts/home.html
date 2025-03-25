@@ -2,6 +2,24 @@
 layout: archive
 ---
 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <!-- Banda con immagine -->
+  <div class="hero-banner"></div>
+
+  <!-- Contenuto della pagina -->
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
