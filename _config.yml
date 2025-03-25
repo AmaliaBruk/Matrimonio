@@ -107,10 +107,9 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Lavori in corso ..."
   location         : "Vinci, Florence (Italy)"
-  email            : innocenti.nur@gmai.com
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope"
       url:  "innocenti.nur@gmai.com"
 
 # Site Footer
