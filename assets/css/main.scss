@@ -7,3 +7,12 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.hero-banner {
+    background-image: url("/assets/images/girasoli.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+  }
