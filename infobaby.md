@@ -4,11 +4,11 @@ permalink: /infobaby/
 
 ---
 
-### 1. Sabato 9 Agosto se magna
+#### Sabato 9 Agosto se magna
 
-### 2. Domenica 10 Agosto pure (ma dopo la messa)
-Qui: ...
+#### Domenica 10 Agosto pure (ma dopo la messa)
+[Qui](https://www.streda.it/)
 
-### 3. Lunedi' 11 Agosto ci si saluta =)
+#### Lunedi' 11 Agosto ci si saluta =)
 
 
