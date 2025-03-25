@@ -10,9 +10,15 @@ search: false
 
 .hero-banner {
     background-image: url("/assets/images/girasoli.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any padding */
+    width: 100vw; /* Ensures the width is 100% of the viewport width */
     position: relative;
+    left: 0;
+    right: 0;
+  }
+  
+  body, html {
+    margin: 0; /* Ensure there’s no default margin on the body or html element */
+    padding: 0;
   }

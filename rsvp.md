@@ -12,7 +12,7 @@ Nome 1
 
 b. Vieni anche il 9 sera?
 
-c. Hai allergie, intolleranze o ?
+c. Hai allergie, intolleranze o preferenze alimentari?
 
 d. Vuoi dormire in struttura?
 
