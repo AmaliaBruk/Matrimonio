@@ -1,6 +1,8 @@
 ---
 title: Alcune info generali ;)
-collection: infobaby
+redirected from: 
+    - /infobaby/
+    
 ---
 
 ### 1. Sabato 9 Agosto se magna
