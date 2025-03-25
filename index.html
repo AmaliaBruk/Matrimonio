@@ -2,3 +2,12 @@
 layout: home
 
 ---
+
+{% if page.header.overlay_image %}
+  <div class="header-banner" style="background-image: url('{{ page.header.overlay_image }}');">
+    <div class="hero-content">
+        <h1>{{ page.title }}</h1> <!-- Title of the page -->
+        <p>{{ page.excerpt }}</p>  <!-- Excerpt or description -->
+      </div>
+  </div>
+{% endif %}
