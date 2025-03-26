@@ -101,16 +101,16 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
-author:
-  name             : "Amalia & Bruk"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Lavori in corso ..."
-  location         : "Vinci, Florence (Italy)"
-  links:
-    - label: "Email"
-      icon: "fa fa-envelope"
-      url:  "innocenti.nur@gmai.com"
+# # Site Author
+# author:
+#   name             : "Amalia & Bruk"
+#   avatar           : "/assets/images/bio-photo.jpg"
+#   bio              : "Lavori in corso ..."
+#   location         : "Vinci, Florence (Italy)"
+#   links:
+#     - label: "Email"
+#       icon: "fa fa-envelope"
+#       url:  "innocenti.nur@gmai.com"
 
 # Reading Files
 include:
@@ -269,7 +269,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: fals
       read_time: true
       comments: # true
       share: true
