@@ -39,7 +39,7 @@ search: false
 .hero-banner {
   position: relative;
   top: 460px;  /* Start below the fixed header */
-  height: 1200px;  /* Define a specific height for the banner */
+  height: 800px;  /* Define a specific height for the banner */
   background-image: url('/assets/images/image2.jpg'); /* Placeholder image */
   background-size: cover;
   background-position: center;
@@ -48,6 +48,7 @@ search: false
   align-items: center;
   text-align: center;
   color: white;
+  padding: 0;
 }
 
 .hero-banner h1 {
