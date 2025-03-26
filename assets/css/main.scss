@@ -1,5 +1,5 @@
 ---
-Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
 
@@ -8,79 +8,49 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// .hero-banner {
-//     background-image: url("/assets/images/girasoli.jpg");
-//     margin: 0; /* Removes any default margin */
-//     padding: 0; /* Removes any padding */
-//     width: 100vw; /* Ensures the width is 100% of the viewport width */
-//     position: relative;
-//     left: 0;
-//     right: 0;
-//   }
-  
-  // body, html {
-  //   margin: 0; /* Ensure there’s no default margin on the body or html element */
-  //   padding: 0;
-  // }
-  /* Default styles for sections */
-// section {
-//   padding: 100px 0;
-//   color: white;
-//   text-align: center;
-//   height: 100vh; /* Each section takes up full viewport height */
-// }
-
-/* Section 1 */
-.section-1 {
-  background-image: url('/assets/images/image1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fixed background */
-
-  padding: 100px 0;
-  color: white;
-  text-align: center;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Section 2 */
-.section-2 {
-  background-image: url('/assets/images/image2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fixed background */
-
-  
-  width: 100%;                  /* Ensure the section spans the entire width of the page */
-  height: 100vh;                /* Make the section take up the full viewport height */
-  
-  padding: 0;                   /* No padding inside the section */
-  color: white;                 /* Text color, adjust as needed */
-  text-align: center;           /* Center-align the text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;   
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Section 3 */
-.section-3 {
-  background-image: url('/assets/images/image1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fixed background */
-
-  padding: 100px 0;
-  color: white;
-  text-align: center;
+/* Fixed Header Styles */
+.fixed-header {
+  position: fixed;  /* Fixes the header at the top of the page */
+  top: 0;           /* Align it to the top */
+  left: 0;          /* Align it to the left */
+  width: 100%;      /* Make the header span the full width */
+  background-color: #333; /* Dark background */
+  color: white;     /* White text */
+  padding: 10px 0;   /* Padding for spacing inside header */
+  z-index: 1000;    /* Ensure it's above other content */
 }
 
-/* Section 4 */
-.section-4 {
-  background-image: url('/assets/images/image2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Fixed background */
-  padding: 100px 0;
-  color: white;
-  text-align: center;
+.fixed-header nav ul {
+  list-style-type: none;  /* Remove default bullet points */
+  text-align: center;     /* Center the list horizontally */
+}
+
+.fixed-header nav ul li {
+  display: inline-block;  /* Display items in a row */
+  margin: 0 15px;         /* Space out the items */
+}
+
+.fixed-header nav ul li a {
+  color: white;           /* Link text color */
+  text-decoration: none;  /* Remove underline */
+  font-size: 18px;        /* Link text size */
+}
+
+/* Add padding to content so it doesn't get hidden under the fixed header */
+.content {
+  padding: 80px 20px;  /* Space the content below the fixed header */
+  text-align: center;   /* Center the content */
 }
