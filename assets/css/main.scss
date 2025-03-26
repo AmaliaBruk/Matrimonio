@@ -40,11 +40,22 @@ section {
 
 /* Section 2 */
 .section-2 {
-  padding: 0;
   background-image: url('/assets/images/image2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fixed background */
+
+  
+  width: 100%;                  /* Ensure the section spans the entire width of the page */
+  height: 100vh;                /* Make the section take up the full viewport height */
+  
+  padding: 0;                   /* No padding inside the section */
+  color: white;                 /* Text color, adjust as needed */
+  text-align: center;           /* Center-align the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;   
 }
 
 /* Section 3 */
