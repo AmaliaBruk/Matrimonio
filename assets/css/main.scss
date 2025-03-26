@@ -40,7 +40,7 @@ search: false
   position: relative;
   top: 60px;  /* Start below the fixed header */
   height: 400px;  /* Define a specific height for the banner */
-  background-image: url(/assets/images/girasoli.jpg); /* Placeholder image */
+  background-image: url('/assets/images/girasoli.jpg'); /* Placeholder image */
   background-size: cover;
   background-position: center;
   display: flex;
