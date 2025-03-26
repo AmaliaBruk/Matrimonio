@@ -9,29 +9,10 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-/* Hero Banner Styling (Fixed Below the Header) */
-.hero-banner {
-  position: relative;
-  top: 460px;  /* Start below the fixed header */
-  height: 800px;  /* Define a specific height for the banner */
-  background-image: url('/assets/images/image2.jpg'); /* Placeholder image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding:0
-}
-
-.hero-banner h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-banner p {
-  font-size: 1.5rem;
-  max-width: 600px;
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Section 1 */
