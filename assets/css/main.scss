@@ -7,59 +7,58 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: white; /* Default text color */
-}
-
-/* Hero Banner (Fixed) */
-.hero-banner {
-  position: fixed;               /* Fix the header to the top of the page */
+.fixed-header {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;                    /* Make it span the full width of the viewport */
-  height: 100vh;                  /* Full viewport height */
-  background-image: url('/assets/images/image1.jpg');  /* Placeholder image */
-  background-size: cover;        /* Ensure the image covers the entire banner */
-  background-position: center;   /* Center the image */
-  display: flex;                 /* Flexbox for centering content */
-  justify-content: center;       /* Center horizontally */
-  align-items: center;           /* Center vertically */
-  text-align: center;            /* Center text */
-  z-index: 1000;                 /* Ensure the banner stays on top */
-  color: white;                  /* White text color for contrast */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.hero-banner h1 {
-  font-size: 4rem;               /* Large heading text */
-  margin-bottom: 20px;           /* Space below the heading */
-}
-
-.hero-banner p {
-  font-size: 1.5rem;             /* Larger text for the subheading */
-  max-width: 600px;              /* Limit the width of the text */
-}
-
-/* Content Section */
-.content {
-  padding: 120px 20px 20px;      /* Add top padding to avoid content overlap with the fixed header */
-  background-color: #f4f4f4;    /* Light background for content */
+.fixed-header nav ul {
+  list-style-type: none;
   text-align: center;
 }
 
-.content h2 {
-  font-size: 2rem;
+.fixed-header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
+.fixed-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Banner Styling (Fixed Below the Header) */
+.hero-banner {
+  position: relative;
+  top: 60px;  /* Start below the fixed header */
+  height: 400px;  /* Define a specific height for the banner */
+  background-image: url('https://via.placeholder.com/1200x800'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
 
 /* Section 1 */
 .section-1 {
