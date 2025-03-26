@@ -59,3 +59,37 @@ body {
 .content h2 {
   font-size: 2rem;
 }
+
+
+/* Section 1 */
+.section-1 {
+  background-image: url('/assets/images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+/* Section 2 */
+.section-2 {
+  padding: 0;
+  background-image: url('/assets/images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+/* Section 3 */
+.section-3 {
+  background-image: url('/assets/images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+/* Section 4 */
+.section-4 {
+  background-image: url('/assets/images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
