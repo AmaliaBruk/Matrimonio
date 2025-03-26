@@ -21,36 +21,42 @@ body {
   line-height: 1.6;
 }
 
-/* Fixed Header Styles */
+/* Fixed Header (Banner) Styles */
 .fixed-header {
-  position: fixed;  /* Fixes the header at the top of the page */
-  top: 0;           /* Align it to the top */
-  left: 0;          /* Align it to the left */
-  width: 100%;      /* Make the header span the full width */
-  background-color: #333; /* Dark background */
-  color: white;     /* White text */
-  padding: 10px 0;   /* Padding for spacing inside header */
-  z-index: 1000;    /* Ensure it's above other content */
+  position: fixed;       /* Fix the header at the top of the page */
+  top: 0;                /* Align it to the top */
+  left: 0;               /* Align it to the left */
+  width: 100%;           /* Make it span the full width of the screen */
+  background-color: #333; /* Dark background for the banner */
+  color: white;          /* White text */
+  text-align: center;    /* Center the text inside the header */
+  padding: 50px 20px;    /* Add padding for height (adjust as needed) */
+  z-index: 1000;         /* Ensure it's above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow under the header */
 }
 
-.fixed-header nav ul {
-  list-style-type: none;  /* Remove default bullet points */
-  text-align: center;     /* Center the list horizontally */
+/* Style the content inside the header (banner) */
+.fixed-header .banner-content {
+  max-width: 1200px;      /* Limit the width of the content */
+  margin: 0 auto;         /* Center the content */
 }
 
-.fixed-header nav ul li {
-  display: inline-block;  /* Display items in a row */
-  margin: 0 15px;         /* Space out the items */
+.fixed-header h1 {
+  font-size: 3rem;        /* Large font size for the main heading */
+  margin-bottom: 10px;    /* Space below the heading */
 }
 
-.fixed-header nav ul li a {
-  color: white;           /* Link text color */
-  text-decoration: none;  /* Remove underline */
-  font-size: 18px;        /* Link text size */
+.fixed-header p {
+  font-size: 1.2rem;      /* Slightly smaller font for the subheading */
 }
 
-/* Add padding to content so it doesn't get hidden under the fixed header */
+/* Content section */
 .content {
-  padding: 80px 20px;  /* Space the content below the fixed header */
-  text-align: center;   /* Center the content */
+  padding: 120px 20px 20px; /* Add top padding to avoid content overlap with the fixed header */
+  text-align: center;      /* Center the content */
+  background-color: #f4f4f4; /* Light background for content */
+}
+
+.content h2 {
+  font-size: 2rem;
 }
