@@ -1,15 +1,12 @@
 ---
+layout: archive
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Fixed Header</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+
+{{ content }}
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3> -->
+
   
   
   <!-- Hero Banner (Fixed) -->
@@ -25,5 +22,18 @@
     <p>Content for section 1...</p>
   </section>
 
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html entries=posts type=entries_layout %}
+</div>
+
+{% include paginator.html %}
 </body>
 </html>
