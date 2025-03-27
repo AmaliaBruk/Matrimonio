@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: /home/
+  - title: "Davvero?"
+    url: /noway/
   - title: "Programma"
     url: /agenda/
   - title: "RSVP"
