@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Davvero?"
-    url: /noway/
+  - title: "Home"
+    url: /home/
   - title: "Programma"
     url: /agenda/
   - title: "RSVP"
