@@ -7,5 +7,5 @@ header:
   
 ---
 
-_Si abbiamo deciso di sposarci, non si capiva?_
+_Bla Bla_
 
