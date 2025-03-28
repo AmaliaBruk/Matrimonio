@@ -1,5 +1,5 @@
 ---
-title: Davvero
+title: Home
 permalink: /noway/
 excerpt: "This post should "
 header:
