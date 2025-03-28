@@ -1,6 +1,6 @@
 ---
 title: Home
-permalink: /noway/
+permalink: /home/
 excerpt: "This post should "
 header:
   overlay_image: /assets/images/header_girasoli.jpg
