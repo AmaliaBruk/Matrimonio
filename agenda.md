@@ -1,5 +1,6 @@
 ---
 title: Vengo, ma quando e dove?
+layout: single_be
 permalink: /agenda/
 
 ---

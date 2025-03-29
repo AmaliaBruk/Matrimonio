@@ -1,0 +1,70 @@
+---
+Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+/* Default styles for sections */
+section {
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  height: 100vh; /* Each section takes up full viewport height */
+}
+
+/* Section 1 */
+.section-1 {
+  background-image: url('/assets/images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+/* Section 2 */
+.section-2 {
+  background-image: url('/assets/images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+/* Section 3 */
+.section-3 {
+  background-image: url('/assets/images/image3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+
+/* Section 3 */
+.section-33 {
+  background-image: url('/assets/images/leiden.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+  height: 200px;
+}
+
+
+/* Section 3 */
+.section-44 {
+  background-image: url('/assets/images/genoa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+  height: 200px;
+}
+
+/* Section 4 */
+.section-4 {
+  background-image: url('/assets/images/image4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}

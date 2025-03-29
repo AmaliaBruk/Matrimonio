@@ -1,4 +1,5 @@
 ---
+layout: us
 title: La nostra storia
 permalink: /us/
 
