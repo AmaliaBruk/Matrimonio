@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Programma"
+    url: /agenda/
+  - title: "RSVP"
+    url: /rsvp/
+  - title: "Lista nozze"
+    url: /listanozze/
+  - title: "Curiosita'"
+    url: /noway/
+  - title: "La nostra storia"
+    url: /noway/a/

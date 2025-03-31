@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Section 1 */
+.section-1 {
+  background-image: url('/assets/images/vinci_panorama.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+  width: auto;
+  height: 300px;
+  
+}
+
+  /* Style for the program schedule container */
+  .program-schedule {
+    margin:10px;
+    text-align: justify-;      /* Centers text inside the container */
+    padding: 20px;
+    border: 1px solid #bbb;  /* Optional: Adds a border around the schedule */
+    border-radius: 8px;      /* Optional: Rounds the corners of the border */
+  }
+
+  no-dots {
+    list-style-type: none; /* Removes the default bullets */
+    padding-left: 0; /* Optional: Removes any default padding */
+  }
