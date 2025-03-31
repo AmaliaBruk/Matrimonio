@@ -1,6 +1,7 @@
 ---
-title: Programma
+title: Vengo!
 layout: rsvp
+is_homepage: no
 ---
 
 

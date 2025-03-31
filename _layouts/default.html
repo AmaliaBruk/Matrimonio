@@ -13,9 +13,11 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
     
-    <div class="page__hero" style=" background-image: url('');">
-        <img src="/assets/images/image3.jpg" alt="Layout A: Header Image" class="page__hero-image">
+    {%if page.is_homepage == yes}
+    <div class="page__hero">
+        <img src="/assets/images/image3.jpg"  class="page__hero-image">
     </div>
+    {% endif %}
 
     <div class="initial-content">
       {{ content }}
