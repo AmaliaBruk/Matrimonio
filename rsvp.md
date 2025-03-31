@@ -1,7 +1,6 @@
 ---
-title: Vengo!
+title: Programma
 layout: rsvp
-is_homepage: no
 ---
 
 
