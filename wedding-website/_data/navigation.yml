@@ -1,11 +1,15 @@
 # main links
 main:
+  - title: Home
+    url: /#intro
+  - title: "Lista nozze"
+    url: /#listanozze
+  - title: "Lista nozze"
+    url: /listanozze/
   - title: "Programma"
     url: /agenda/
   - title: "RSVP"
     url: /rsvp/
-  - title: "Lista nozze"
-    url: /listanozze/
   - title: "Curiosita'"
     url: /noway/
   - title: "La nostra storia"
