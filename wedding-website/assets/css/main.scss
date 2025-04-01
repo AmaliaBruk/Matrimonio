@@ -8,6 +8,18 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+html {
+  scroll-behavior: smooth;
+}
+
+.info-segment {
+background-color: #e6b800;
+}
+
+.h2_info {
+  font-size: 20px;
+  margin: 0;
+}
 
 .page__hero-image {
   width: 100%;
@@ -38,4 +50,17 @@ search: false
   no-dots {
     list-style-type: none; /* Removes the default bullets */
     padding-left: 0; /* Optional: Removes any default padding */
+  }
+
+  #countdown {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: 	 #e6b800;
+    padding: 5px;
+    /* text-align: center; */
+    border-radius: 5px;
+    width: fit-content;
+    height: 40p;
+    justify-content: center;
   }
