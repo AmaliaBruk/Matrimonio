@@ -38,6 +38,7 @@ height: 300px;
   height: 350px;
   background-color: $background-color;
   margin-top: 20px;
+  margin-top: 40px;
 }
 
 
@@ -88,6 +89,22 @@ height: 300px;
   height: 700px;
 }
 
+.row-test {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.second-heading-text-center {
+      margin-top: 0;
+}
+
 .three_images {
   max-width: 32%;
   max-height: 305px;
@@ -129,3 +146,29 @@ height: 300px;
     height: 40p;
     justify-content: center;
   }
+
+dt {
+  display: inline; /* Makes <dt> inline */
+  margin-right: 10px; /* Optional: Add some space between <dt> and <dd> */
+}
+
+dd {
+  display: inline; /* Makes <dd> inline */
+}
+
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+dt {
+  font-weight: 700;
+}
+dd, dt {
+  line-height: 1.42857143;
+}
