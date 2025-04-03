@@ -2,15 +2,18 @@
 main:
   - title: Home
     url: /#intro
-  - title: "Lista nozze"
-    url: /#listanozze
-  - title: "Lista nozze"
-    url: /listanozze/
   - title: "Programma"
-    url: /agenda/
+    url: /#agenda
   - title: "RSVP"
     url: /rsvp/
-  - title: "Curiosita'"
+  - title: "Curiosit&agrave"
     url: /noway/
   - title: "La nostra storia"
     url: /noway/a/
+  - title: "Lista nozze"
+    url: /#listanozze
+  - title: "Diteci qualcosa"
+    url: /#sayhi
+  - title: "Domande?"
+    url: /#contact
+    
