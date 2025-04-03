@@ -1,26 +1,150 @@
 ---
-layout: single
-is_homepage: yes
 ---
-<div class="container">
-  <h2>Benvenuti!</h2>
-    <p></p>
-    <p style="font-size: 20px;" font-family="Helvetica">Siamo Amalia e Bruk, e questo &egrave il sito del nostro matrimonio. </p>
-    <p style="font-size: 20px;">Qui troverete un p&ograve di informazioni riguardo all'organizzazione e ai vari eventi!</p>
-    <p style="font-size: 20px;">Siamo molto felici di trascorrere questo giorno con tutti voi, 
-      per questo speriamo che voi possiate esserci!</p>
-  </div>
-</div>
 
-<!-- Hero Section -->
-<section class="section-1">
-  <div class="container">
-  <!-- Nulla!  -->
-  </div>
-</section>
+<!doctype html>
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
 
-</section>
-</body>
-</html> 
+  <head >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+   <!--     
+    <div class="page__hero">
+        <img src="/assets/images/image3.jpg"  class="page__hero-image">
+    </div> -->
+
+    <div class="initial-content">
+      
+      <div id="main" role="main">
+        {% include sidebar.html %}
+      
+        <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+      
+          <div class="page__inner-wrap">
+              <header>
+                {% if page.title -%}
+                <h1 id="page-title" class="page__title" itemprop="headline">
+                  <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                </h1>
+                {%- endif %}
+                {% include page__meta.html %}
+              </header>
+          </div>
+          
+          <!-- EMPTY CONTAINER AS BACKGROUND of the fixed header -->
+          <div class="header_background"></div>
+          
+
+          <!-- IMAGE SUNFLOWERS -->
+          <section class="section-0"  id="intro">
+            <div class="container">
+            <!-- Nulla!  -->
+            </div>
+          </section>
+
+          <!-- STRUCTURE OF THE WEBSITE -->
+          <section class="info-segment">
+
+              <!-- INTRO ref: introduce the website's goal -->
+               <!-- TODO:MODIFICARE MESSAGGIO -->
+              <h2 class="h2_info">Benvenuti!</h2>
+              <hr class="separator">
+                <p class="p_intro"></p>
+                <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
+                <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
+                <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
+
+          </section>
+
+          <!-- Set of three pictures  -->
+          <div class="gallery" id="agenda">
+            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
+            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
+            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
+          </div>
+
+          
+          <!-- STRUCTURE OF THE WEBSITE -->
+          <section class="programma-segment" id="agenda">
+
+            <!-- INTRO ref: introduce the website's goal -->
+             <!-- TODO:MODIFICARE MESSAGGIO -->
+            <h2 class="h2_info">Benvenuti!</h2>
+            <hr class="separator">
+              <p class="p_intro"></p>
+              <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
+              <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
+              <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
+
+        </section>
 
 
+          <!-- Hero Section -->
+          <section class="section-1">
+            <div class="container">
+            <!-- Nulla!  -->
+            </div>
+          </section>
+
+            </section>
+            </body>
+              </html> 
+
+
+
+
+              {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+            </section>
+      
+            <footer class="page__meta">
+              {% if site.data.ui-text[site.locale].meta_label %}
+                <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+              {% endif %}
+              {% include page__taxonomy.html %}
+              {% include page__date.html %}
+            </footer>
+      
+            {% if page.share %}{% include social-share.html %}{% endif %}
+      
+            {% include post_pagination.html %}
+          </div>
+      
+          {% if site.comments.provider and page.comments %}
+            {% if jekyll.environment == 'production' %}
+              {% include comments.html %}
+            {% else %}
+              <p>
+                Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
+                but are disabled in non-production environments.
+              </p>
+            {% endif %}
+          {% endif %}
+        </article>
+      
+      </div>
+      
+      {% include after-content.html %}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>
