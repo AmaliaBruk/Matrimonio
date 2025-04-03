@@ -4,14 +4,45 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          <div id="countdown">
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Aug 10, 2025 16:00:00").getTime();
+      
+              // Update the countdown every 1 second
+              var x = setInterval(function() {
+                // Get the current date and time
+                var now = new Date().getTime();
+      
+                // Calculate the time remaining
+                var distance = countDownDate - now;
+      
+                // Time calculations for days, hours, minutes, and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      
+                // Display the countdown in the element with id="countdown"
+                document.getElementById("countdown").innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " ;
+      
+                // If the countdown is over, display a message
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script></div>      
+     
         </a>
         <ul class="visible-links">
+
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a
@@ -22,12 +53,7 @@
             </li>
           {%- endfor -%}
         </ul>
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
-        {% endif %}
+       
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
