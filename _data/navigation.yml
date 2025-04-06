@@ -4,8 +4,6 @@ main:
     url: /#intro
   - title: "Programma"
     url: /#agenda
-  - title: "Programma (old)"
-    url: /agenda
   - title: "RSVP"
     url: /rsvp/
   - title: "Curiosit&agrave"
