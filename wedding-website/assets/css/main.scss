@@ -42,12 +42,21 @@ height: 300px;
 }
 
 
+.programma-segment-2{
+  width: 100%;
+  height: auto;
+  background-color: $background-color;
+  margin-top: 20px;
+  margin-top: 40px;
+}
+
+
 .separator {
     border-color: $primary-color;
     border-width: 3px;
     margin-top: 5px;
     margin-bottom: 20px;
-    width: 130px;
+    width: 295px;
 }
 
 
@@ -64,7 +73,7 @@ height: 300px;
 }
 
 .p_intro {
-  font-size: 15px;
+  font-size: 21px;
   font-family:"Helvetica";
 }
 
@@ -94,11 +103,16 @@ height: 300px;
   margin-left: -15px;
 }
 
+
+.row-2 {
+  padding-left: 0px;
+}
+
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 100px;
 }
 
 .second-heading-text-center {
@@ -107,9 +121,15 @@ height: 300px;
 
 .three_images {
   max-width: 32%;
-  max-height: 305px;
-  min-height: 301px;
   overflow: cover;
+}
+
+
+.two_images {
+  max-width: 45%;
+  height: 350px;
+  width: 400px;
+  overflow: cover
 }
 
 .gallery {
@@ -149,7 +169,7 @@ height: 300px;
 
 dt {
   display: inline; /* Makes <dt> inline */
-  margin-right: 10px; /* Optional: Add some space between <dt> and <dd> */
+  margin-right: 0px; /* Optional: Add some space between <dt> and <dd> */
 }
 
 dd {
@@ -159,8 +179,7 @@ dd {
 .dl-horizontal dt {
   float: left;
   width: 160px;
-  overflow: hidden;
-  clear: left;
+  overflow: auto;
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -169,6 +188,111 @@ dd {
 dt {
   font-weight: 700;
 }
+
 dd, dt {
+  margin-left: 10px;
   line-height: 1.42857143;
+}
+
+.gallery-2 {
+  height: 550px;
+  background-color: $background-color;  /* A soft grey that goes well with #fff */
+  padding: 25px;
+  display: flex;
+  overflow: cover;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.gallery-3 {
+  height: 450px;
+  background-color: $background-color;  /* A soft grey that goes well with #fff */
+  padding: 105px;
+  display: flex;
+  overflow: cover;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.gallery-4 {
+  height: 450px;
+  background-color: $background-color;  /* A soft grey that goes well with #fff */
+  display: flex;
+  overflow: cover;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container for each image */
+.image-container {
+  position: relative;
+}
+
+/* Style for the image */
+.image-container img {
+  width: 400px;  /* Adjust to fit the container */
+  height: 300px;  /* Adjust to fit the container */
+  margin-bottom: 55px;
+}
+
+/* Style for the clickable text */
+.video-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  color: white; /* Red text color */
+  font-size: 24px;  /* Font size */
+  text-decoration: none;  /* Remove underline */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+  padding: 10px 20px;  /* Padding around the text */
+  border-radius: 5px;  /* Rounded corners */
+  opacity: 0;  /* Hidden initially */
+  pointer-events: none;  /* Disable interaction by default */
+  transition: opacity 0.3s ease;  /* Smooth fade-in transition */
+}
+
+/* Show the text when hovering over the container */
+.image-container:hover .video-link {
+  opacity: 1;  /* Make the text visible */
+  pointer-events: auto;  /* Enable interaction (clicking) */
+}
+
+
+
+/* Container for each image */
+.image-container-2 {
+  position: relative;
+}
+
+/* Style for the image */
+.image-container-2 img {
+  width: 400px;  /* Adjust to fit the container */
+  height: 300px;  /* Adjust to fit the container */
+  margin-bottom: 10px;
+}
+
+/* Style for the clickable text */
+.video-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  color: white; /* Red text color */
+  font-size: 15px;  /* Font size */
+  text-decoration: none;  /* Remove underline */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+  padding: 10px 20px;  /* Padding around the text */
+  border-radius: 5px;  /* Rounded corners */
+  opacity: 0;  /* Hidden initially */
+  pointer-events: none;  /* Disable interaction by default */
+  transition: opacity 0.3s ease;  /* Smooth fade-in transition */
+}
+
+/* Show the text when hovering over the container */
+.image-container-2:hover .video-link {
+  opacity: 1;  /* Make the text visible */
+  pointer-events: auto;  /* Enable interaction (clicking) */
 }
