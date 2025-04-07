@@ -4,245 +4,338 @@
 <!doctype html>
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
 
-  <head >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-  
+<head >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
-   <!--     
-    <div class="page__hero">
-        <img src="/assets/images/image3.jpg"  class="page__hero-image">
-    </div> -->
 
-    <div class="initial-content">
-      
-      <div id="main" role="main">
-        {% include sidebar.html %}
-      
-        <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
-      
-          <div class="page__inner-wrap">
-              <header>
-                {% if page.title -%}
-                <h1 id="page-title" class="page__title" itemprop="headline">
-                  <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
-                </h1>
-                {%- endif %}
-                {% include page__meta.html %}
-              </header>
-          </div>
-          
-          <!-- EMPTY CONTAINER AS BACKGROUND of the fixed header -->
-          <div class="header_background"></div>
-          
+<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached masthead.html %}
+  <!--     
+  <div class="page__hero">
+      <img src="/assets/images/image3.jpg"  class="page__hero-image">
+  </div> -->
 
-          <!-- IMAGE SUNFLOWERS -->
-          <section class="section-0"  id="intro">
-            <div class="container">
-            <!-- Nulla!  -->
-            </div>
-          </section>
-
-          <!-- STRUCTURE OF THE WEBSITE -->
-          <section class="info-segment">
-
-              <!-- INTRO ref: introduce the website's goal -->
-               <!-- TODO:MODIFICARE MESSAGGIO -->
-              <h2 class="h2_info">Benvenuti!</h2>
-              <hr class="separator">
-                <p class="p_intro"></p>
-                <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
-                <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
-                <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
-
-          </section>
-
-          <!-- Set of three pictures  -->
-          <div class="gallery-2" id="agenda">
-            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
-            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
-            <div class="three_images"><img src="/assets/images/image1.jpg"></div>
-          </div>
-
-          
-          <!-- PLAN FOR THE 3 days -->
-          <section class="programma-segment-1" id="agenda">
-          <div class="row">
-            <div class="col-lg-12">
-                <h2 class="section-heading-text-center">Sabato sera (9 Agosto)</h2>
-                <hr class="separator">
-                <dl class="dl-horizontal dt">
-                    <dt>Evento:</dt><dd> Cena insieme a petroio</dd>
-                    <br>
-                    <dt>Quando:</dt>
-                    <dd>Sabato, 9 Agosto alle 18</dd>
-                    <br>
-                    <dt>Dove:</dt><dd>Qui!</dd>
-                    <br>
-                    <dt>Informazioni:</dt><dd>Casual (Canadiana encouraged)</dd>
-                    <br>
-                    <dt>Parcheggio:</dt><dd>Pieno!</dd>
-                    <br>
-                    <dt>Altre info:</dt><dd> Sar&agrave un momento di ritrovo e riflessione di tutti gli invitati prima della giornata di Domenica.</dd>
-                    <br>
-                    <dt>Come arrivarci:</dt><dd>... allora iniziate da maps...</dd>
-                  </dl>
-            </div>
-          </div>
-
-        <div class="gallery-3">
-          <div class="two_images">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147024.3695301993!2d10.633169686718738!3d43.73484219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a663b284c0a2d%3A0x257c4ccf0c9638df!2sChiesa%20di%20Santa%20Maria%20a%20Petroio!5e1!3m2!1sit!2snl!4v1743458270856!5m2!1sit!2snl" 
-            width="400px" 
-            height="300px" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="image-container">
-            <img src="/assets/images/petroio.jpg">
-            <a href="https://www.youtube.com/watch?v=your_video_id"  class="video-link">Watch video</a>
-          </div>
+  <div class="initial-content">
+    
+    <div id="main" role="main">
+      {% include sidebar.html %}
+    
+      <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+    
+        <div class="page__inner-wrap">
+            <header>
+              {% if page.title -%}
+              <h1 id="page-title" class="page__title" itemprop="headline">
+                <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+              </h1>
+              {%- endif %}
+              {% include page__meta.html %}
+            </header>
         </div>
-      </section>
-          
-        <!-- INFORMAZIONI SUL LUOGO E POSIZIONE -->
+        
+        <!-- EMPTY CONTAINER AS BACKGROUND of the fixed header -->
+        <div class="header_background"></div>
         
 
-        <!-- PLAN FOR THE 3 days -->
-        <section class="programma-segment-2" id="agenda">
-          <div class="row">
-            <div class="col-lg-12 ">
-                <h2 class="section-heading-text-center">Domenica (10 Agosto)</h2>
-                <hr class="separator">
-                <dl class="dl-horizontal dt">
-                    <dt>Evento:</dt><dd> Cena insieme a petroio</dd>
-                    <br>
-                    <dt>Quando:</dt>
-                    <dd>Sabato, 9 Agosto alle 18</dd>
-                    <br>
-                    <dt>Dove:</dt><dd>Qui!</dd>
-                    <br>
-                    <dt>Info:</dt><dd>Casual (Canadiana encouraged)</dd>
-                    <br>
-                    <dt>Transportation:</dt><dd>Transportation is not provided. Please plan responsibly.</dd>
-                    <br>
-                    <dt>Parcheggio:</dt><dd>Pieno</dd>
-                    <br>
-                    <dt>Altre info:</dt>
-                    <dd> sar&agrave un momento di ritrovo e riflessione di tutti gli invitati prima della giornata di Domenica.</dd>
-                </dl>
-            </div>
+        <!-- IMAGE SUNFLOWERS -->
+        <section class="section-0"  id="intro">
+          <div class="container">
+          <!-- Nulla!  -->
+          </div>
+        </section>
 
-            
-          <div class="gallery-4">
-            
-            <div class="three_images">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18361.987646213413!2d10.889868044045294!3d43.78714297519085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a66db0f19c94d%3A0xba658a1003d3ba5!2sChiesa%20Madre%20di%20Santa%20Croce!5e1!3m2!1sit!2snl!4v1743456790323!5m2!1sit!2snl" 
-                      width="400"
-                      height="300" 
-                      style="border:0;" 
-                      allowfullscreen="" 
-                      loading="lazy" 
-                      referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-              </div>
-              <div class="three_images">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.9654502182884!2d10.90587791087701!3d43.76846737097633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a668ddc452c77%3A0x6a03846ad4efbc30!2sAgriturismo%20Streda!5e1!3m2!1sit!2snl!4v1743457793123!5m2!1sit!2snl" 
-                width="400" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+        <!-- STRUCTURE OF THE WEBSITE -->
+        <section class="info-segment">
+
+            <!-- INTRO ref: introduce the website's goal -->
+              <!-- TODO:MODIFICARE MESSAGGIO -->
+            <h2 class="h2_info">Benvenuti!</h2>
+            <hr class="separator">
+              <p class="p_intro"></p>
+              <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
+              <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
+              <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
+
+        </section>
+
+        <!-- Set of three pictures  -->
+        <div class="gallery-2" id="agenda">
+          <div class="three_images"><img src="/assets/images/paris_us.jpg"></div>
+          <div class="three_images"><img src="/assets/images/genoa_us.jpg"></div>
+          <div class="three_images"><img src="/assets/images/rotoballe_us.jpg"></div>
+        </div>
+
+      
+        <!-- PLAN FOR THE 3 days -->
+        <section class="programma-segment-1" id="agenda">
+        <div class="info-segment-2">  
+          <h2 class="h2_info">Programma</h2>
+          <hr class="separator">
+          <p>Qui di sotto vi presentiamo il programma dei tre giorni insieme. A partire da Sabato 9 Agosto pomeriggio a Luned&igrave 11 mattina.
+            Speriamo di vedervi tutti e passare questi giorni importanti insieme a voi.</p>
+        </div>
+        
+        <!-- Hero Section -->
+        <section class="hero-1">
+          <div class="container">
+          <!-- Nulla!  -->
+          </div>
+        </section>
+        <div class="row">
+          <div class="col-lg-12">
+              <h2 class="section-heading-text-center">Sabato sera (9 Agosto)</h2>
+              <hr class="separator">
+              <dl class="dl-horizontal dt">
+                  <dt>Evento:</dt><dd> Cena insieme a Petroio</dd>
+                  <br>
+                  <dt>Quando:</dt>
+                  <dd>Sabato, 9 Agosto alle 18</dd>
+                  <br>
+                  <dt>Dove:</dt><dd>Qui!</dd>
+                  <br>
+                  <dt>Informazioni:</dt><dd>Casual (Canadiana encouraged)</dd>
+                  <br>
+                  <dt>Parcheggio:</dt><dd>Pieno!</dd>
+                  <br>
+                  <dt>Altre info:</dt><dd> Sar&agrave un momento di ritrovo e riflessione di tutti gli invitati prima della giornata di Domenica.</dd>
+                  <br>
+                  <dt>Come arrivarci:</dt><dd>... allora iniziate da maps...</dd>
+                </dl>
+          </div>
+        </div>
+
+      <div class="gallery-3">
+        
+        <div class="image-container">
+          <img src="/assets/images/petroio.jpg">
+          <a href="https://www.youtube.com/watch?v=B-_z6sZIdjg"  class="video-link">Cliccami!</a>
+        </div>
+        <div class="two_images">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147024.3695301993!2d10.633169686718738!3d43.73484219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a663b284c0a2d%3A0x257c4ccf0c9638df!2sChiesa%20di%20Santa%20Maria%20a%20Petroio!5e1!3m2!1sit!2snl!4v1743458270856!5m2!1sit!2snl" 
+          width="400px" 
+          height="300px" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+        
+      <!-- INFORMAZIONI SUL LUOGO E POSIZIONE -->
+      
+
+      <!-- PLAN FOR THE 3 days -->
+      <section class="programma-segment-2" id="agenda">
+        <div class="row">
+          <div class="col-lg-12 ">
+              <h2 class="section-heading-text-center">Domenica (10 Agosto)</h2>
+              <hr class="separator">
+              <dl class="dl-horizontal dt">
+                  <dt>Evento:</dt><dd> Cerimonia del nostro matrimonio</dd>
+                  <br>
+                  <dt>Quando:</dt>
+                  <dd>Domenica, 10 Agosto, alle ore 16:30</dd>
+                  <br>
+                  <dt>Dove:</dt><dd>Chiesa di Vinci</dd>
+                  <br>
+                  <dt>Info:</dt><dd>Ci sar&agrave dell'acqua fresca all'uscita!</dd>
+                  <br>
+                  <dt>Parcheggio:</dt><dd>Pieno, sotto la torre (if you know what I mean)</dd>
+                  <br>
+                  <dt>Altre info:</dt>
+                  <dd> sar&agrave un momento di ritrovo, ma in Chiesa!</dd>
+              </dl>
+          </div>
+
+          
+        <div class="gallery-4">
+          <div class="image-container-2">
+            <img src="/assets/images/leonardo.jpg">
+            <a href="https://www.feelflorence.it/it/node/47461"  class="video-link">Curiosit&agrave</a>
+          </div>
+          <div class="three_images">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18361.987646213413!2d10.889868044045294!3d43.78714297519085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a66db0f19c94d%3A0xba658a1003d3ba5!2sChiesa%20Madre%20di%20Santa%20Croce!5e1!3m2!1sit!2snl!4v1743456790323!5m2!1sit!2snl" 
+                    width="400"
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+
+
+        
+        <div class="row">
+          <div class="col-lg-12 ">
+              <h2 class="section-heading-text-center">Domenica (10 Agosto)</h2>
+              <hr class="separator">
+              <dl class="dl-horizontal dt">
+                  <dt>Evento:</dt><dd> Ricevimento </dd>
+                  <br>
+                  <dt>Quando:</dt>
+                  <dd>Domenica, 10 Agosto, alle ore 18:30</dd>
+                  <br>
+                  <dt>Dove:</dt><dd>Agriturismo Streda, presso il Belvedere di Streda</dd>
+                  <br>
+                  <dt>Info:</dt><dd>Ci sar&agrave da magn&agrave!</dd>
+                  <br>
+                  <dt>Parcheggio:</dt><dd>Pieno, siamo in campagna! Per&ograve fate attenzione alla strada!</dd>
+                  <br>
+                  <dt>Altre info:</dt><dd> Venite presi bene!!! </dd>
+              </dl>
+          </div>
+        </div>
+        
+  
+        <div class="gallery-4">
+          
             <div class="image-container-2">
               <img src="/assets/images/streda.jpg">
               <a href="https://www.streda.it/"  class="video-link">Sito dell'agriturismo</a>
             </div>
-          </div>
-
-          </div>
+            <div class="three_images">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.9654502182884!2d10.90587791087701!3d43.76846737097633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a668ddc452c77%3A0x6a03846ad4efbc30!2sAgriturismo%20Streda!5e1!3m2!1sit!2snl!4v1743457793123!5m2!1sit!2snl" 
+              width="400" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          
+        </div>
+        
+      </section>
 
           
+      
 
-            </section>
-  
-            
-          <!-- Hero Section -->
-          <section class="section-1">
-            <div class="container">
-            <!-- Nulla!  -->
+        <!-- PLAN FOR THE 3 days -->
+        <section class="programma-segment-3" id="agenda">
+          <div class="row-2">
+            <div class="col-lg-12 ">
+                <h2 class="section-heading-text-center">Luned&igrave (11 Agosto)</h2>
+                <hr class="separator">
+                <dl class="dl-horizontal dt">
+                    <dt>Evento:</dt><dd> (Per chi vuole) Colazione insieme, Saluti e abbracci!</dd>
+                    <br>
+                    <dt>Quando:</dt><dd>Luned&igrave, alle ore 9:30</dd>
+                    <br>
+                    <dt>Dove:</dt><dd>Agriturismo Streda, presso Belvedere di Streda</dd>
+                    <br>
+                    <dt>Info:</dt><dd>Dovremo liberare la struttura entro le 11.</dd>
+                </dl>
             </div>
-          </section>
-
-
-
-
-          <!-- PLAN FOR THE 3 days -->
-          <section class="programma-segment-3" id="agenda">
-            <div class="row-2">
-              <div class="col-lg-12 ">
-                  <h2 class="section-heading-text-center">Luned&igrave (11 Agosto)</h2>
-                  <hr class="separator">
-                  <dl class="dl-horizontal dt">
-                      <dt>Evento:</dt><dd> Salut e abbracci!</dd>
-                  </dl>
-              </div>
-            </div>
-            </section>
-
-
-              {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-            </section>
-      
-            <footer class="page__meta">
-              {% if site.data.ui-text[site.locale].meta_label %}
-                <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-              {% endif %}
-              {% include page__taxonomy.html %}
-              {% include page__date.html %}
-            </footer>
-      
-            {% if page.share %}{% include social-share.html %}{% endif %}
-      
-            {% include post_pagination.html %}
           </div>
-      
-          {% if site.comments.provider and page.comments %}
-            {% if jekyll.environment == 'production' %}
-              {% include comments.html %}
-            {% else %}
-              <p>
-                Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
-                but are disabled in non-production environments.
-              </p>
+        </section>
+
+
+        <!-- Hero Section -->
+        <section class="section-1">
+          <div class="container">
+          <!-- Nulla!  -->
+          </div>
+        </section>
+
+        
+
+
+        <!-- PLAN FOR THE 3 days -->
+        <section class="programma-segment-3" id="rsvp">
+          <div class="info-segment-2">
+            <h2 class="h2_info">Partecipazione ed RSVP</h2>
+            <hr class="separator">
+            <p>Non dimenticarti l' <a href="{{ request.path}}/rsvp">RSVP!</a> {{ "😉" }}</p>
+            <p> Alcune informazioni da tenere a mente:</p>
+          </div>
+          <ul>
+            <li style="margin:0; padding:0;"> C' &egrave una piscina, non dimenticarti neppure il costume!</li>
+            <li style="margin:0; padding:0;"> 
+              <p>Ci farebbe piacere rendere la trasferta pi&ugrave tranquilla possibile per tutti.</p>
+              <p>Se avete dei posti in macchina, o avete bisogno di un passaggio, fatecelo sapere!</p>
+            </li>
+            <li style="margin:0; padding:0;">...</li>
+            <li style="margin:0; padding:0;">....</li>
+        </ul>
+        </section>
+
+
+        <!-- Hero Section -->
+        <section class="hero-3">
+          <div class="container">
+          <!-- Nulla!  -->
+          </div>
+        </section>
+
+
+             <!-- PLAN FOR THE 3 days -->
+            <section class="programma-segment-3" id="listanozze">
+              <div class="info-segment-2">
+                <h2 class="h2_info">Regalo di nozze</h2>
+                <p>Ciao ragazzi, no liste di nozze per noi. Se volete renderci felici, mandate un milione di Euro alla mensa di Darsena. &Egrave merito loro se ci siamo conosciuti.</p>
+
+              </div>
+              
+            </section>
+
+        
+
+
+
+
+
+
+            {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+          </section>
+    
+          <footer class="page__meta">
+            {% if site.data.ui-text[site.locale].meta_label %}
+              <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
             {% endif %}
+            {% include page__taxonomy.html %}
+            {% include page__date.html %}
+          </footer>
+    
+          {% if page.share %}{% include social-share.html %}{% endif %}
+    
+          {% include post_pagination.html %}
+        </div>
+    
+        {% if site.comments.provider and page.comments %}
+          {% if jekyll.environment == 'production' %}
+            {% include comments.html %}
+          {% else %}
+            <p>
+              Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
+              but are disabled in non-production environments.
+            </p>
           {% endif %}
-        </article>
-      
-      </div>
-      
-      {% include after-content.html %}
+        {% endif %}
+      </article>
+    
     </div>
+    
+    {% include after-content.html %}
+  </div>
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
+  {% if site.search == true %}
+    <div class="search-content">
+      {% include_cached search/search_form.html %}
     </div>
+  {% endif %}
 
-    {% include scripts.html %}
-  </body>
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
+</body>
 </html>

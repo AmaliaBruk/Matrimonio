@@ -6,15 +6,11 @@ main:
     url: /#agenda
   - title: "RSVP"
     url: /rsvp/
-  - title: "Curiosit&agrave"
-    url: /noway/
   - title: "La nostra storia"
     url: /noway/a/
   - title: "Lista nozze"
     url: /#listanozze
   - title: "Diteci qualcosa"
     url: /#sayhi
-  - title: "Domande?"
-    url: /#contact
 
     
