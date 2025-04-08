@@ -47,36 +47,67 @@
           </div>
         </section>
 
-        <!-- STRUCTURE OF THE WEBSITE -->
+        <!-- INTRODUCTION [BENVENUTE & BENVENUTI!]-->
         <section class="info-segment">
 
-            <!-- INTRO ref: introduce the website's goal -->
-              <!-- TODO:MODIFICARE MESSAGGIO -->
-            <h2 class="h2_info">Benvenuti!</h2>
-            <hr class="separator">
-              <p class="p_intro"></p>
-              <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
-              <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
-              <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
+          <h2 class="h2_info">BENVENUTE e BENVENUTI!</h2>
+          <hr class="separator_intro">
+
+          <!-- Count down -->
+          <div class="container_countdown"> 
+            <p class="p_intro_countdown"><i>Mancano solo</i></p> 
+            <div id="countdown">
+              <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Aug 10, 2025 16:00:00").getTime();
+        
+                // Update the countdown every 1 second
+                var x = setInterval(function() {
+                  // Get the current date and time
+                  var now = new Date().getTime();
+        
+                  // Calculate the time remaining
+                  var distance = countDownDate - now;
+        
+                  // Time calculations for days, hours, minutes, and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        
+                  // Display the countdown in the element with id="countdown"
+                  document.getElementById("countdown").innerHTML =
+                    days + " giorni " + hours + " ore e " + minutes + " minuti " ;
+        
+                  // If the countdown is over, display a message
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+              </script></div>      
+            <p class="p_intro_countdown"><i> al nostro matrimonio! </i></p>
+          </div>
+            
+          
+              <p class="p_intro"> Ciao amici e parenti! Se stavate cercando informazioni sull'organizzazione del nostro matrimonio, siete nel posto giusto!</p> 
+              <p class="p_intro"> Siamo molto felici di festeggiare con tutti voi, per questo speriamo che possiate esserci!</p>
+              <p class="p_intro"> I momenti principali saranno due: la Cena etiope di benvenuto di Sabato 9 Agosto, la Cerimonia religiosa e la festa di matrimonio di Domenica 10 Agosto.</p>
+              <p class="p_intro"> Qui sotto trovate tutte le informazioni utili. Non dimenticatevi di confermare la vostra presenza <a href="{{ request.path}}/rsvp">QUI</a>.</p>
+              <p class="p_intro"> Per qualsias cosa, non esitate a contattarci (i numeri li conoscete {{"😉"}}).</p>
+              <br>
+              <p class="p_intro_sign"> Un abbraccio,</p>
+              <p class="p_intro_sign"> <i>Amalia & Bruk</i></p>
+              
 
         </section>
 
         <!-- Set of three pictures  -->
-        <div class="gallery-2" id="agenda">
+        <div class="gallery-2" >
           <div class="three_images"><img src="/assets/images/paris_us.jpg"></div>
           <div class="three_images"><img src="/assets/images/genoa_us.jpg"></div>
           <div class="three_images"><img src="/assets/images/rotoballe_us.jpg"></div>
         </div>
 
-      
-        <!-- PLAN FOR THE 3 days -->
-        <section class="programma-segment-1" id="agenda">
-        <div class="info-segment-2">  
-          <h2 class="h2_info">Programma</h2>
-          <hr class="separator">
-          <p>Qui di sotto vi presentiamo il programma dei tre giorni insieme. A partire da Sabato 9 Agosto pomeriggio a Luned&igrave 11 mattina.
-            Speriamo di vedervi tutti e passare questi giorni importanti insieme a voi.</p>
-        </div>
         
         <!-- Hero Section -->
         <section class="hero-1">
@@ -84,25 +115,31 @@
           <!-- Nulla!  -->
           </div>
         </section>
+
+        <!-- PLAN FOR THE 3 days -->
+        <section class="programma-segment-1" >
+        <div class="info-segment-2" >  
+          <h2 class="h2_info" id="agenda">Programma</h2>
+          <hr class="separator_program">
+        </div>
+        
         <div class="row">
           <div class="col-lg-12">
-              <h2 class="section-heading-text-center">Sabato sera (9 Agosto)</h2>
-              <hr class="separator">
+              <h2 class="sub_h2_info">Sabato sera (9 Agosto)</h2>
               <dl class="dl-horizontal dt">
-                  <dt>Evento:</dt><dd> Cena insieme a Petroio</dd>
+                  <dt>Evento:</dt><dd class="p_intro"> Cena insieme a Petroio</dd>
                   <br>
-                  <dt>Quando:</dt>
-                  <dd>Sabato, 9 Agosto alle 18</dd>
+                  <dt>Quando:</dt><dd class="p_intro">Sabato, 9 Agosto alle 18</dd>
                   <br>
-                  <dt>Dove:</dt><dd>Qui!</dd>
+                  <dt>Dove:</dt><dd class="p_intro">Qui!</dd>
                   <br>
-                  <dt>Informazioni:</dt><dd>Casual (Canadiana encouraged)</dd>
+                  <dt>Informazioni:</dt><dd class="p_intro">Chiamateci!</dd>
                   <br>
-                  <dt>Parcheggio:</dt><dd>Pieno!</dd>
+                  <dt>Parcheggio:</dt><dd class="p_intro">Pieno!</dd>
                   <br>
-                  <dt>Altre info:</dt><dd> Sar&agrave un momento di ritrovo e riflessione di tutti gli invitati prima della giornata di Domenica.</dd>
+                  <dt>Altre info:</dt><dd class="p_intro"> Sar&agrave un momento di ritrovo e riflessione di tutti gli invitati prima della giornata di Domenica.</dd>
                   <br>
-                  <dt>Come arrivarci:</dt><dd>... allora iniziate da maps...</dd>
+                  <dt>Come arrivarci:</dt><dd class="p_intro">... allora iniziate da maps...</dd>
                 </dl>
           </div>
         </div>
