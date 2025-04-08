@@ -56,6 +56,36 @@
             <hr class="separator">
               <p class="p_intro"></p>
               <p class="p_intro"><i>Ciao a tutti!</i> Siamo Amalia e Bruk, e fra pochi mesi ci sar&agrave il nostro matrimonio. </p>
+              <div id="countdown">
+                <script>
+                  // Set the date we're counting down to
+                  var countDownDate = new Date("Aug 10, 2025 16:00:00").getTime();
+          
+                  // Update the countdown every 1 second
+                  var x = setInterval(function() {
+                    // Get the current date and time
+                    var now = new Date().getTime();
+          
+                    // Calculate the time remaining
+                    var distance = countDownDate - now;
+          
+                    // Time calculations for days, hours, minutes, and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          
+                    // Display the countdown in the element with id="countdown"
+                    document.getElementById("countdown").innerHTML =
+                      days + "giorni " + hours + " ore " + minutes + "minuti " ;
+          
+                    // If the countdown is over, display a message
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("countdown").innerHTML = "EXPIRED";
+                    }
+                  }, 1000);
+                </script></div>      
+         
               <p class="p_intro"> Se stavate cercando informazioni al riguardo, siete nel posto giusto!</p>
               <p class="p_intro">Siamo molto felici di trascorrere questo giorno con tutti voi, per questo speriamo che voi possiate esserci!</p>
 
