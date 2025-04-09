@@ -657,10 +657,9 @@ dd, dt {
   
   
   .two_images {
-    width: 15%;
+    max-width: 15%;
     max-height: 15%;
     object-fit: cover;
-    background-color: purple;
   }
   
   .gallery {
