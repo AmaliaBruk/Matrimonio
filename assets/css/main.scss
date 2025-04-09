@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .info-segment {
   padding-left: 20px;
   padding-top: 20px;
@@ -750,7 +754,7 @@ dd, dt {
   
   
   .gallery-4 {
-    height: 450px;
+    height: auto;
     background-color: $background-color;  /* A soft grey that goes well with #fff */
     display: flex;
     overflow: cover;
