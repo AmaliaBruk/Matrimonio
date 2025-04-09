@@ -149,6 +149,9 @@ html {
 /* Section 0 */
 .section-0 {
   background-image: url('/assets/images/header_form.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -164,6 +167,9 @@ html {
 /* Section 1 */
 .section-1 {
   background-image: url('/assets/images/vinci_panorama.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fixed background */
@@ -175,6 +181,9 @@ html {
 /* Section 1 */
 .hero-1 {
   background-image: url('/assets/images/hero-genoa.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fixed background */
@@ -186,7 +195,8 @@ html {
 /* Section 1 */
 .hero-2 {
   background-image: url('/assets/images/hero-genoa.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; /* Fixed background */
   width: auto;
@@ -197,7 +207,8 @@ html {
 /* Section 1 */
 .hero-3 {
   background-image: url('/assets/images/beach.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; /* Fixed background */
   width: auto;
@@ -553,7 +564,10 @@ dd, dt {
   /* Section 0 */
   .section-0 {
     background-image: url('/assets/images/header_form.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
     width: 100%;
     height: 300px;
     margin-top: 0;
@@ -568,7 +582,8 @@ dd, dt {
   /* Section 1 */
   .section-1 {
     background-image: url('/assets/images/vinci_panorama.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; /* Fixed background */
     width: auto;
@@ -579,8 +594,10 @@ dd, dt {
   /* Section 1 */
   .hero-1 {
     background-image: url('/assets/images/hero-genoa.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+  
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 400px;
@@ -589,9 +606,11 @@ dd, dt {
   
   /* Section 1 */
   .hero-2 {
-    background-image: url('/assets/images/hero-genoa.jpg');
-    background-size: cover;
+    background-image: url('/assets/images/hero-genoa.jpg');  
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+  
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 400px;
@@ -601,8 +620,10 @@ dd, dt {
   /* Section 1 */
   .hero-3 {
     background-image: url('/assets/images/beach.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+  
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 700px;
