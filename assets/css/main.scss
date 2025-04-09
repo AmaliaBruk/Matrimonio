@@ -233,10 +233,10 @@ html {
 
 
 .two_images {
-  max-width: 45%;
-  height: 350px;
-  width: 400px;
-  overflow: cover
+  overflow: cover;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
 }
 
 .gallery {
