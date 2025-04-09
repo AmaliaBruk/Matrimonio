@@ -3,13 +3,13 @@
 
 <!doctype html>
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-<meta name="viewport" content="width=768, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
 
   <div class="initial-content">
     
-      <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+      <article class="width:100%" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     
         <div id="main" role="main">
           {% include sidebar.html %}
