@@ -105,13 +105,24 @@
     z-index: 20;
     background-color: $background-color;
     border-bottom: 2px solid $primary-color;
+
+    &__inner-wrap {
+      @include clearfix;
+      margin-inline: auto;
+      padding: 1em;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-family: $sans-serif-narrow;
   
     &__inner-wrap {
       @include clearfix;
       margin-inline: auto;
       padding: 1em;
-      background-color: green;
-
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
