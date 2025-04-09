@@ -14,7 +14,7 @@ html {
 
 .info-segment {
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 50px;
   text-align: left;
   margin-right: 20px;
@@ -79,7 +79,7 @@ html {
   border-width: 3px;
   margin-top: 5px;
   margin-bottom: 20px;
-  width: 28%;
+  width: 300px;
   align-items: center;
   margin-left: auto;
   margin-right: auto; /* This will center the separator horizontally */
@@ -90,7 +90,7 @@ html {
   border-width: 3px;
   margin-top: 5px;
   margin-bottom: 20px;
-  width: 12%;
+  width: 130px;
   align-items: center;
   margin-left: auto;
   margin-right: auto; /* This will center the separator horizontally */
@@ -154,6 +154,7 @@ html {
   width: 100%;
   height: 300px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .form {
@@ -404,4 +405,410 @@ dd, dt {
 .image-container-2:hover .video-link {
   opacity: 1;  /* Make the text visible */
   pointer-events: auto;  /* Enable interaction (clicking) */
+}
+
+
+@media (max-width: 768px) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .info-segment {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+    margin-right: 20px;
+    height: 100%;
+  }
+  
+  .info-segment-2 {
+    padding-left: 20px;
+    padding-top: 50px;
+    text-align: left;
+    margin-right: 20px;
+    height: 100%;
+  }
+  
+  
+  .header_background {
+    width: 100%;
+    height: 90px;
+    background-color: $background-color;
+  }
+  
+  .section_intro {
+    width: 100%;
+    height: 350px;
+    background-color: $background-color;
+  }
+  
+  
+  .programma-segment{
+    width: 100%;
+    height: 350px;
+    background-color: $background-color;
+    margin-top: 20px;
+    margin-top: 40px;
+  }
+  
+  
+  .programma-segment-2{
+    width: 100%;
+    height: auto;
+    background-color: $background-color;
+    margin-top: 20px;
+    margin-top: 40px;
+  }
+  
+  
+  .separator {
+      border-color: $primary-color;
+      border-width: 3px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      width: 295px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto; /* This will center the separator horizontally */
+  }
+  
+  
+  .separator_intro {
+    border-color: $primary-color;
+    border-width: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; /* This will center the separator horizontally */
+  }
+  
+  
+  .separator_program {
+    border-color: $primary-color;
+    border-width: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 130px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; /* This will center the separator horizontally */
+  }
+  
+
+  .h2_info {
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+  .sub_h2_info {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+
+  .page__hero-image {
+    width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    margin-top: 0;
+  }
+  
+  .p_intro {
+    margin:7px;
+    font-size: 14pt;
+    font-family: math;
+    text-align: center;
+  }
+  
+  
+  .p_intro_sign {
+    margin:7px;
+    font-size: 11pt;
+    font-family: math;
+    text-align: center;
+  }
+  
+  .p_intro_countdown {
+    margin:7px;
+    font-size: 20pt;
+    font-family: math;
+  }
+  
+  .container_countdown {
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Section 0 */
+  .section-0 {
+    background-image: url('/assets/images/header_form.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    padding-top: 90px;
+    width: 100%;
+  }
+  
+  /* Section 1 */
+  .section-1 {
+    background-image: url('/assets/images/vinci_panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+    width: auto;
+    height: 350px;
+  }
+  
+  
+  /* Section 1 */
+  .hero-1 {
+    background-image: url('/assets/images/hero-genoa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+    width: auto;
+    height: 400px;
+  }
+  
+  
+  /* Section 1 */
+  .hero-2 {
+    background-image: url('/assets/images/hero-genoa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+    width: auto;
+    height: 400px;
+  }
+  
+  
+  /* Section 1 */
+  .hero-3 {
+    background-image: url('/assets/images/beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+    width: auto;
+    height: 700px;
+  }
+  
+  .row-test {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  
+  .row-2 {
+    padding-left: 0px;
+  }
+  
+  .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-top: 30px;
+  }
+  
+  .second-heading-text-center {
+        margin-top: 0;
+  }
+  
+  .three_images {
+    max-width: 32%;
+    overflow: cover;
+  }
+  
+  
+  .two_images {
+    max-width: 45%;
+    height: 350px;
+    width: 400px;
+    overflow: cover
+  }
+  
+  .gallery {
+    display: flex;
+    overflow: hidden;
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+    /* Style for the program schedule container */
+    .program-schedule {
+      margin:10px;
+      text-align: justify-;      /* Centers text inside the container */
+      padding: 20px;
+      border: 1px solid #bbb;  /* Optional: Adds a border around the schedule */
+      border-radius: 8px;      /* Optional: Rounds the corners of the border */
+    }
+  
+    no-dots {
+      list-style-type: none; /* Removes the default bullets */
+      padding-left: 0; /* Optional: Removes any default padding */
+    }
+  
+    #countdown {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      background-color: 	 #e6b800;
+      padding: 5px;
+      border-radius: 5px;
+      width: fit-content;
+      height: 40p;
+    }
+  
+  dt {
+    display: inline; /* Makes <dt> inline */
+    margin-right: 0px; /* Optional: Add some space between <dt> and <dd> */
+  }
+  
+  dd {
+    display: inline; /* Makes <dd> inline */
+  }
+  
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: auto;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // padding-top: 30px;
+  }
+  
+  dt {
+    font-weight: 700;
+    font-size: 14pt;
+    margin: 0;
+  }
+  
+  dd, dt {
+    margin-left: 10px;
+    line-height: 1.42857143;
+  }
+  
+  .gallery-2 {
+    height: 100%;
+    background-color: $background-color;  /* A soft grey that goes well with #fff */
+    display: flex;
+    overflow: cover;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left:15px;
+    padding-bottom:30px;
+  }
+  
+  
+  .gallery-3 {
+    height: 450px;
+    background-color: $background-color;  /* A soft grey that goes well with #fff */
+    padding: 105px;
+    display: flex;
+    overflow: cover;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  
+  .gallery-4 {
+    height: 450px;
+    background-color: $background-color;  /* A soft grey that goes well with #fff */
+    display: flex;
+    overflow: cover;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /* Container for each image */
+  .image-container {
+    position: relative;
+  }
+  
+  /* Style for the image */
+  .image-container img {
+    width: 400px;  /* Adjust to fit the container */
+    height: 300px;  /* Adjust to fit the container */
+    margin-bottom: 55px;
+  }
+  
+  /* Style for the clickable text */
+  .video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Red text color */
+    font-size: 24px;  /* Font size */
+    text-decoration: none;  /* Remove underline */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px 20px;  /* Padding around the text */
+    border-radius: 5px;  /* Rounded corners */
+    opacity: 0;  /* Hidden initially */
+    pointer-events: none;  /* Disable interaction by default */
+    transition: opacity 0.3s ease;  /* Smooth fade-in transition */
+  }
+  
+  /* Show the text when hovering over the container */
+  .image-container:hover .video-link {
+    opacity: 1;  /* Make the text visible */
+    pointer-events: auto;  /* Enable interaction (clicking) */
+  }
+  
+  
+  
+  /* Container for each image */
+  .image-container-2 {
+    position: relative;
+  }
+  
+  /* Style for the image */
+  .image-container-2 img {
+    width: 400px;  /* Adjust to fit the container */
+    height: 300px;  /* Adjust to fit the container */
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the clickable text */
+  .video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Red text color */
+    font-size: 15px;  /* Font size */
+    text-decoration: none;  /* Remove underline */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px 20px;  /* Padding around the text */
+    border-radius: 5px;  /* Rounded corners */
+    opacity: 0;  /* Hidden initially */
+    pointer-events: none;  /* Disable interaction by default */
+    transition: opacity 0.3s ease;  /* Smooth fade-in transition */
+  }
+  
+  /* Show the text when hovering over the container */
+  .image-container-2:hover .video-link {
+    opacity: 1;  /* Make the text visible */
+    pointer-events: auto;  /* Enable interaction (clicking) */
+  }
+  
 }
