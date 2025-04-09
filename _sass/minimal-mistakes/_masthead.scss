@@ -101,6 +101,8 @@
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
     z-index: 20;
+    background-color: $background-color;
+    border-bottom: 2px solid $primary-color;
   
     &__inner-wrap {
       @include clearfix;
