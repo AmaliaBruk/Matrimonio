@@ -3,28 +3,28 @@
 
 <!doctype html>
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1024, initial-scale=1.0">
+<head >
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
+
 
 <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached masthead.html %}
+  <!--     
+  <div class="page__hero">
+      <img src="/assets/images/image3.jpg"  class="page__hero-image">
+  </div> -->
 
   <div class="initial-content">
-    
-      <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
     
     <div id="main" role="main">
       {% include sidebar.html %}
     
-      
-        <!-- EMPTY CONTAINER AS BACKGROUND of the fixed header -->
-        <div class="header_background">
-        <head >
-            {% include head.html %}
-            {% include head/custom.html %}
-          </head>
-          {% include_cached skip-links.html %}
-          {% include_cached masthead.html %}
-        </div>
-
+      <article class="" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+    
         <div class="page__inner-wrap">
             <header>
               {% if page.title -%}
@@ -36,6 +36,8 @@
             </header>
         </div>
         
+        <!-- EMPTY CONTAINER AS BACKGROUND of the fixed header -->
+        <div class="header_background"></div>
         
 
         <!-- IMAGE SUNFLOWERS -->
