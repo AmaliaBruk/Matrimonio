@@ -10,10 +10,7 @@
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
     z-index: 20;
-    width: 100%;
-    background-color: $background-color;
-    border-bottom: 2px solid $primary-color;
-  
+
     &__inner-wrap {
       @include clearfix;
       margin-inline: auto;
@@ -104,15 +101,11 @@
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
     z-index: 20;
-    max-width:768px;
-    background-color: blue;
-    border-bottom: 2px solid $primary-color;
   
     &__inner-wrap {
       @include clearfix;
       margin-inline: auto;
       padding: 1em;
-      width: 718px;
       background-color: green;
 
       display: -webkit-box;
