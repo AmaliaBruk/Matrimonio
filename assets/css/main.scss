@@ -638,10 +638,11 @@ dd, dt {
   
   
   .two_images {
-    max-width: 45%;
     height: 350px;
-    width: 400px;
-    overflow: cover
+    overflow: cover;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
   }
   
   .gallery {
