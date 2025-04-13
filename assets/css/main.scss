@@ -71,7 +71,7 @@ html, body {
     border-width: 3px;
     margin-top: 5px;
     margin-bottom: 20px;
-    width: 295px;
+    width: 100%;
     align-items: center;
     margin-left: auto;
     margin-right: auto; /* This will center the separator horizontally */
@@ -111,6 +111,7 @@ html, body {
   font-size: 20px;
   margin: 0;
   text-align: center;
+  width: fit-content;
 }
 
 .page__hero-image {
@@ -219,6 +220,13 @@ html, body {
   height: 700px;
 }
 
+.row {
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+} 
+
 .row-test {
   margin-right: -15px;
   margin-left: -15px;
@@ -286,34 +294,42 @@ html, body {
     height: 40p;
   }
 
-dt {
-  display: inline; /* Makes <dt> inline */
-  margin-right: 0px; /* Optional: Add some space between <dt> and <dd> */
+dl {
+  margin: 0;
+  padding: 0;
 }
 
-dd {
-  display: inline; /* Makes <dd> inline */
-}
-
-.dl-horizontal dt {
+.dl-horizontal dt{
   float: left;
   width: 160px;
   overflow: auto;
   text-align: right;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  // padding-top: 30px;
+}
+
+
+.dl-horizontal {
+  margin: 0;
+  padding: 0;
+}
+
+.dl-row {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  margin-bottom: 1em;
 }
 
 dt {
   font-weight: 700;
   font-size: 14pt;
   margin: 0;
+  margin-right: 0px; /* Optional: Add some space between <dt> and <dd> */
 }
 
 dd, dt {
   margin-left: 10px;
   line-height: 1.42857143;
+  display: inline; /* Makes <dd> inline */
 }
 
 .gallery-2 {
@@ -482,7 +498,7 @@ dd, dt {
       border-width: 3px;
       margin-top: 5px;
       margin-bottom: 20px;
-      width: 295px;
+      width: 100%;
       align-items: center;
       margin-left: auto;
       margin-right: auto; /* This will center the separator horizontally */
@@ -517,6 +533,7 @@ dd, dt {
     font-size: 50px;
     margin: 0;
     text-align: center;
+    width: fit;
   }
   
   
@@ -708,11 +725,11 @@ dd, dt {
     display: inline; /* Makes <dd> inline */
   }
   
-  .dl-horizontal dt {
+  .dlhorizontal {
     float: left;
-    width: 160px;
+    width: 560px;
     overflow: auto;
-    text-align: right;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
     // padding-top: 30px;
@@ -721,8 +738,13 @@ dd, dt {
   dt {
     font-weight: 700;
     font-size: 14pt;
+    flex: 0 0 auto;
+    width: 150px;              /* Fixed width for alignment */
+    text-align: right;         /* Align text to the right */
     margin: 0;
+    padding-right: 1em;        /* Space between dt and dd */
   }
+  
   
   dd, dt {
     margin-left: 10px;
