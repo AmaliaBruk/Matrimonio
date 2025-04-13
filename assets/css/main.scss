@@ -305,21 +305,24 @@ dl {
   overflow: auto;
   text-align: right;
   white-space: nowrap;
+  font-size: 20px;
 }
+
 
 
 .dl-horizontal {
   margin: 0;
-  padding: 0;
 }
 
 .dl-row {
   display: flex;
   align-items: flex-start; /* Aligns items at the top */
   margin-bottom: 1em;
+  height: fit-content;
 }
 
 dt {
+  padding-top:3px;
   font-weight: 700;
   font-size: 14pt;
   margin: 0;
@@ -436,6 +439,12 @@ dd, dt {
   pointer-events: auto;  /* Enable interaction (clicking) */
 }
 
+
+.p_list {
+  font-size: 17pt;
+  font-family: math;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
 
@@ -556,8 +565,7 @@ dd, dt {
     font-size: 14pt;
     font-family: math;
     text-align: center;
-  }
-  
+  }  
   
   .p_intro_sign {
     margin:7px;
@@ -716,23 +724,19 @@ dd, dt {
       height: 40p;
     }
   
-  dt {
-    display: inline; /* Makes <dt> inline */
-    margin-right: 0px; /* Optional: Add some space between <dt> and <dd> */
-  }
-  
   dd {
     display: inline; /* Makes <dd> inline */
   }
   
-  .dlhorizontal {
+  .dl-horizontal dt {
+    font-family: math;
     float: left;
     width: 560px;
     overflow: auto;
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
-    // padding-top: 30px;
+    font-size: 20px;
   }
   
   dt {
@@ -749,6 +753,7 @@ dd, dt {
   dd, dt {
     margin-left: 10px;
     line-height: 1.42857143;
+    height: 25px;
   }
   
   .gallery-2 {
@@ -762,6 +767,13 @@ dd, dt {
     padding-bottom:30px;
   }
   
+  .p_list {
+    font-size: 17pt;
+    font-family: math;
+    text-align: center;
+    padding-bottom: 3px;
+  }
+
   
   .gallery-3 {
     height: 450px;
