@@ -1,4 +1,0 @@
----
-layout: listanozze
-permalink: /listanozze/
----
