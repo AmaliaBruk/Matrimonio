@@ -12,7 +12,7 @@
     z-index: 20;
     background-color: $background-color;
     border-bottom: 2px solid $primary-color;
-
+    width: 1280px;
     &__inner-wrap {
       @include clearfix;
       margin-inline: auto;
@@ -71,7 +71,7 @@
     display: block;
     list-style-type: none;
     white-space: nowrap;
-  
+    width: 100%;
     &--lg {
       padding-inline-end: 2em;
       font-weight: 700;
