@@ -128,6 +128,11 @@ html, body {
   text-align: center;
 }
 
+.li_intro {
+  margin:7px;
+  font-size: 13pt;
+  font-family: math;
+}
 
 .p_intro_sign {
   margin:7px;
@@ -835,7 +840,11 @@ dd, dt {
     pointer-events: auto;  /* Enable interaction (clicking) */
   }
   
-  
+  .li_intro {
+    margin:7px;
+    font-size: 13pt;
+    font-family: math;
+  }
   
   /* Container for each image */
   .image-container-2 {
