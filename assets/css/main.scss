@@ -190,22 +190,20 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position: center;
   background-attachment: fixed; /* Fixed background */
   width: auto;
-  height: 350px;
+  height: 450px;
 }
 
 
-/* Section 1 */
+// /* Section 1 */ NON UTILIZZATA
 .hero-2 {
   background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   background-attachment: fixed; /* Fixed background */
   width: auto;
-  height: 350px;
+  height: 450px;
 }
 
 
@@ -215,9 +213,14 @@ html, body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-attachment: fixed; /* Fixed background */
   width: auto;
+<<<<<<< HEAD
   height: 350px;
+=======
+  height: 450px;
+>>>>>>> c6aaa7e145633a5531618c282aca324a567e730d
 }
 
 .row {
