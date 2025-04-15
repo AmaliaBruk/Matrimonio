@@ -101,11 +101,21 @@ html, body {
 }
 
 .h2_info {
-  font-size: 19px;
-  margin: 0;
+  font-size: 20pt;
+  margin: 5px;
   text-align: center;
+  font-family: cursive;
+  border-style: outset;
+  border-width: 7px;
+  border-color: #de8321;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
+.extra_margin {
+  margin:5px;
+}
 
 .sub_h2_info {
   font-size: 20px;
@@ -201,6 +211,8 @@ html, body {
   background-attachment: fixed; /* Fixed background */
   width: auto;
   height: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -227,6 +239,19 @@ html, body {
 
   height: 450px;
 
+}
+
+
+/* Section 1 */
+.hero-4 {
+  background-image: url('{{ site.baseurl }}/assets/images/parapendio.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Fixed background */
+  width: auto;
+  height: 450px;
 }
 
 .row {
