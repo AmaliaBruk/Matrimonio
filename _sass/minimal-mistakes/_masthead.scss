@@ -12,7 +12,8 @@
     z-index: 20;
     background-color: $background-color;
     border-bottom: 2px solid $primary-color;
-    width: 1280px;
+    width: 100% !important;
+    // width: 1280px;
     &__inner-wrap {
       @include clearfix;
       margin-inline: auto;
@@ -26,9 +27,9 @@
       justify-content: space-between;
       font-family: $sans-serif-narrow;
   
-      // @include breakpoint($x-large) {
-      //   max-width: $max-width;
-      // }
+      @include breakpoint($x-large) {
+        max-width: $max-width;
+      }
   
       nav {
         z-index: 10;
@@ -64,18 +65,6 @@
     margin-inline: 0;
     width: 100%;
     clear: both;
-  }
-
-  
-  .masthead__menu-item {
-    display: block;
-    list-style-type: none;
-    white-space: nowrap;
-    width: 100%;
-    &--lg {
-      padding-inline-end: 2em;
-      font-weight: 700;
-    }
   }
   
   
@@ -142,7 +131,7 @@
   .masthead__menu {
     float: inline-start;
     margin-inline: 0;
-    max-width: 768px;
+    max-width: 100%;
     clear: both;
   }
   

@@ -1,13 +1,13 @@
 # main links
 main:
-  - title: Home
+  - title: "Home"
     url: /#intro
   - title: "Programma"
     url: /#agenda
   - title: "RSVP"
     url: /rsvp/
   - title: "La nostra storia"
-    url: /noway/a/
+    url: /noway
   - title: "Lista nozze"
     url: /#listanozze
   - title: "Diteci qualcosa"
