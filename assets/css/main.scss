@@ -182,7 +182,6 @@ html, body {
 /* Section 0 */
 .section-0 {
   background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -502,6 +501,19 @@ ul li {
   line-height: 1.5em; /* smaller value = less space between lines */
 }
 
+
+/* Section 1 */
+.hero-header {
+  background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 800px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
 
   html {
@@ -659,6 +671,21 @@ ul li {
     margin-top: 0;
     margin-bottom: 30px;
   }
+  
+
+/* Section 1 */
+.hero-header {
+  background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Fixed background */
+  width: auto;
+  height: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
   
   .form {
     padding-top: 90px;
