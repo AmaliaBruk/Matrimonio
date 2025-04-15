@@ -102,15 +102,10 @@ html, body {
 
 .h2_info {
   font-size: 20pt;
-  margin: 5px;
-  text-align: center;
-  font-family: cursive;
-  border-style: outset;
-  border-width: 7px;
-  border-color: #de8321;
+  text-align: right;
+  margin-left: auto;
   width: fit-content;
-  margin: auto;
-  margin-bottom: 30px;
+  padding-right: 50px;
 }
 
 .extra_margin {
@@ -119,7 +114,7 @@ html, body {
 
 .sub_h2_info {
   font-size: 20px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   width: fit-content;
 }
@@ -176,8 +171,8 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 300px;
+  width: 1280px;
+  height: 100%;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -197,7 +192,7 @@ html, body {
   background-position: center;
   background-attachment: fixed; /* Fixed background */
   width: auto;
-  height: 350px;
+  height: 450px;
 }
 
 
@@ -276,6 +271,8 @@ html, body {
   min-height: 1px;
   padding-right: 10px;
   padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 
 .second-heading-text-center {
@@ -480,6 +477,14 @@ dd, dt {
   text-align: center;
 }
 
+
+ul li {
+  margin: 0;
+  padding: 2px 3px; /* reduce vertical spacing */
+  
+  line-height: 1.5em; /* smaller value = less space between lines */
+}
+
 @media (max-width: 768px) {
 
   html {
@@ -577,6 +582,7 @@ dd, dt {
     margin: 0;
     text-align: center;
     width: fit;
+    margin-bottom: 30px;
   }
   
   
