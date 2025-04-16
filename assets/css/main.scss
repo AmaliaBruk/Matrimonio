@@ -507,7 +507,7 @@ ul li {
   height: 850px;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 768px) {
 
   html {
     scroll-behavior: smooth;
