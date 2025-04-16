@@ -166,4 +166,17 @@
     clear: both;
     font-size: 8pt;
   }
+
+  .masthead__menu-item {
+    display: block;
+    list-style-type: none;
+    white-space: nowrap;
+  
+    &--lg {
+      padding-inline-end: 2em;
+      font-weight: 700;
+    }
+  }
+
+
 }
