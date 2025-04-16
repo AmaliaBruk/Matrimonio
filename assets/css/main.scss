@@ -513,14 +513,12 @@ ul li {
     scroll-behavior: smooth;
   }
   
-  .info-segment {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-    margin-right: 20px;
-    height: 100%;
-    width: 100%;
+.info-segment {
+      text-align: left;
+      height: 100%;
+      width: 100%;
+      margin: 0 0 20px 0;
+      padding: 0;
   }
   
   .info-segment-2 {
@@ -623,7 +621,6 @@ ul li {
   }
   
   .p_intro {
-    margin:7px;
     font-size: 8pt;
     font-family: math;
     text-align: center;
@@ -637,11 +634,11 @@ ul li {
   }
 
   .p_intro_sign {
-    margin:7px;
     font-size: 6pt;
     font-family: math;
     text-align: right;
-    padding-right: 100px;
+    padding: 0 15px 0 0;
+    margin: 0;
   }
   
   .p_intro_countdown {
@@ -651,14 +648,20 @@ ul li {
   }
   
   .container_countdown {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
+    // text-align: center;
+    // padding-top: 15px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // font-size: 12pt;
+    // padding-right:120px;
+    padding: 5px;
     text-align: center;
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
+    display: flex
+;
     align-items: center;
     font-size: 12pt;
-    padding-right:120px;
 
   }
   
@@ -674,8 +677,8 @@ ul li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 708px;
-  height: auto;
+  width: 100%;
+  height: 250px;
   margin-top: -30px;
   margin-bottom: 0;
 
@@ -963,10 +966,8 @@ ul li {
 
   .h2_intro {
     font-size: 13pt;
-    text-align: center;
-    margin: auto;
-    width: fit-content;
-    padding-right: 50px;
+    padding: 0;
+    margin-top: 20px;
   }
 
 }

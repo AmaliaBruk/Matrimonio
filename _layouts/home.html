@@ -57,7 +57,7 @@
           
           <!-- Count down -->
           <div class="container_countdown">
-            <p class="p_intro_countdown"><i>Mancano solo</i></p>
+            <p class="p_intro_countdown"><i>Mancano solo</i></p><br>
             <div id="countdown">
               <script>
                 // Set the date we're counting down to
@@ -78,7 +78,7 @@
 
                   // Display the countdown in the element with id="countdown"
                   document.getElementById("countdown").innerHTML =
-                    days + " giorni " + hours + " ore e " + minutes + " minuti ";
+                    days + " giorni <br> " + hours + " ore e " + minutes + " minuti ";
 
                   // If the countdown is over, display a message
                   if (distance < 0) {
@@ -87,7 +87,7 @@
                   }
                 }, 1000);
               </script>
-            </div>
+            </div><br>
             <p class="p_intro_countdown"><i> al nostro matrimonio! </i></p>
           </div>
 
@@ -103,7 +103,7 @@
             Cerimonia religiosa e la festa di matrimonio di Domenica 10 Agosto.</p>
           <p class="p_intro"> Qui sotto trovate tutte le informazioni utili. Non dimenticatevi di confermare la vostra
             presenza <a href="{{ request.path}}/rsvp">QUI</a>.</p>
-          <p class="p_intro"> Per qualsiasi cosa, non esitate a contattarci (i numeri li conoscete {{"😉"}}).</p>
+          <p class="p_intro"> Per qualsiasi cosa, non esitate a contattarci <br> (i numeri li conoscete {{"😉"}}).</p>
           <br>
           <p class="p_intro_sign"> Vi vogliamo bene. </p>
           <p class="p_intro_sign"> Un abbraccio,</p>
