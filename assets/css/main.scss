@@ -667,14 +667,14 @@ ul li {
   /* Section 0 */
   .section-0 {
     background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  
+    background-size: contain;
     max-width: 768px;
-    height: 300px;
+    height: auto;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+
   }
   
 
