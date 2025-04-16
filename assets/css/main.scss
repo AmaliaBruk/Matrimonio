@@ -179,18 +179,6 @@ html, body {
   align-items: center;
 }
 
-/* Section 0 */
-.section-0 {
-  background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 1280px;
-  height: 100%;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
 .form {
   padding-top: 90px;
   width: 100%;
@@ -210,7 +198,7 @@ html, body {
 }
 
 
-/* Section 1 */
+// /* Section 1 */ Genova
 .hero-1 {
   background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');
   background-size: contain;
@@ -519,7 +507,7 @@ ul li {
   height: 850px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 767px) {
 
   html {
     scroll-behavior: smooth;
@@ -591,9 +579,8 @@ ul li {
   .separator_intro {
     border-color: $primary-color;
     border-width: 3px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    width: 300px;
+    padding-right:120px;
+    width: 180px;
     align-items: center;
     margin-left: auto;
     margin-right: auto; /* This will center the separator horizontally */
@@ -637,21 +624,29 @@ ul li {
   
   .p_intro {
     margin:7px;
-    font-size: 13pt;
+    font-size: 8pt;
     font-family: math;
     text-align: center;
   }  
   
+    
+  .li_intro {
+    margin:7px;
+    font-size: 8pt;
+    font-family: math;
+  }
+
   .p_intro_sign {
     margin:7px;
-    font-size: 11pt;
+    font-size: 6pt;
     font-family: math;
-    text-align: center;
+    text-align: right;
+    padding-right: 100px;
   }
   
   .p_intro_countdown {
     margin:7px;
-    font-size: 15pt;
+    font-size: 9pt;
     font-family: math;
   }
   
@@ -662,19 +657,13 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12pt;
+    padding-right:120px;
+
   }
   
-  /* Section 0 */
-  .section-0 {
-    background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    max-width: 768px;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 15px;
-
+  .style-countdown{
+    font-size: 1pt;
   }
   
 
@@ -685,11 +674,11 @@ ul li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* Fixed background */
   width: auto;
-  height: 900px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 580px;
+  margin-top: -30px;
+  margin-bottom: 0;
+
 }
   
   .form {
@@ -702,36 +691,26 @@ ul li {
     background-image: url('{{ site.baseurl }}/assets/images/vinci_panorama.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   
-  /* Section 1 */
+// /* Section 1 */ Genova
   .hero-1 {
-    background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-    background-attachment: fixed; /* Fixed background */
-    width: auto;
-    height: 350px;
-  }
-  
-  
-  /* Section 1 */
-  .hero-2 {
     background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');  
     background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
-    background-position: center;
-
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   
@@ -740,12 +719,28 @@ ul li {
     background-image: url('{{ site.baseurl }}/assets/images/beach.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: left;
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+
+  
+/* Section 1 */
+.hero-4 {
+  background-image: url('{{ site.baseurl }}/assets/images/parapendio.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed; /* Fixed background */
+  width: auto;
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
   
   .row-test {
     margin-right: -15px;
@@ -803,7 +798,7 @@ ul li {
     }
   
     #countdown {
-      font-size: 18px;
+      font-size: 10px;
       font-weight: bold;
       text-align: center;
       color: #fff;
@@ -963,5 +958,15 @@ ul li {
     opacity: 1;  /* Make the text visible */
     pointer-events: auto;  /* Enable interaction (clicking) */
   }
+ 
   
+
+  .h2_intro {
+    font-size: 13pt;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding-right: 50px;
+  }
+
 }
