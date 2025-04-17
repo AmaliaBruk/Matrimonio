@@ -146,6 +146,7 @@ html, body {
   font-size: 13pt;
   font-family: math;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .li_intro {
@@ -158,9 +159,7 @@ html, body {
   margin:7px;
   font-size: 11pt;
   font-family: math;
-  text-align: right;
-  padding-right: 100px;
-
+  text-align: center;
 }
 
 .p_intro_countdown {
@@ -177,18 +176,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Section 0 */
-.section-0 {
-  background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 1280px;
-  height: 100%;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .form {
@@ -210,7 +197,7 @@ html, body {
 }
 
 
-/* Section 1 */
+// /* Section 1 */ Genova
 .hero-1 {
   background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');
   background-size: contain;
@@ -525,14 +512,12 @@ ul li {
     scroll-behavior: smooth;
   }
   
-  .info-segment {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-    margin-right: 20px;
-    height: 100%;
-    width: 100%;
+.info-segment {
+      text-align: left;
+      height: 100%;
+      width: 100%;
+      margin: 0 0 20px 0;
+      padding: 0;
   }
   
   .info-segment-2 {
@@ -577,7 +562,7 @@ ul li {
   
   .separator {
       // border-color: $primary-color;
-      border-color: #8d4005;
+      border-color: $primary-color;
       border-width: 3px;
       margin-top: 5px;
       margin-bottom: 20px;
@@ -591,9 +576,8 @@ ul li {
   .separator_intro {
     border-color: $primary-color;
     border-width: 3px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    width: 300px;
+    padding-right:120px;
+    width: 180px;
     align-items: center;
     margin-left: auto;
     margin-right: auto; /* This will center the separator horizontally */
@@ -613,10 +597,12 @@ ul li {
   
 
   .h2_info {
-    font-size: 19px;
+    padding-right: 50px;
+    font-size: 13pt;
     margin: 0;
-    text-align: center;
+    text-align: right;
     width: fit;
+    margin-left: auto;
     margin-bottom: 30px;
   }
   
@@ -636,45 +622,42 @@ ul li {
   }
   
   .p_intro {
-    margin:7px;
-    font-size: 13pt;
+    font-size: 14pt;
     font-family: math;
     text-align: center;
   }  
   
-  .p_intro_sign {
+    
+  .li_intro {
     margin:7px;
-    font-size: 11pt;
+    font-size: 13pt;
+    font-family: math;
+  }
+
+  .p_intro_sign {
+    font-size: 13pt;
     font-family: math;
     text-align: center;
+    padding: 0 15px 0 0;
+    margin: 0;
   }
   
   .p_intro_countdown {
     margin:7px;
-    font-size: 15pt;
+    font-size: 13pt;
     font-family: math;
   }
   
   .container_countdown {
-    padding-bottom: 50px;
+    padding: 5px;
     text-align: center;
-    padding-top: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-size: 13pt;
   }
   
-  /* Section 0 */
-  .section-0 {
-    background-image: url('{{ site.baseurl }}/assets/images/header_form.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-    width: 100%;
-    height: 300px;
-    margin-top: 0;
-    margin-bottom: 30px;
+  .style-countdown{
+    font-size: 1pt;
   }
   
 
@@ -685,11 +668,11 @@ ul li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* Fixed background */
-  width: auto;
-  height: 900px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 250px;
+  margin-top: -30px;
+  margin-bottom: 0;
+
 }
   
   .form {
@@ -702,36 +685,26 @@ ul li {
     background-image: url('{{ site.baseurl }}/assets/images/vinci_panorama.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   
-  /* Section 1 */
+// /* Section 1 */ Genova
   .hero-1 {
-    background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-    background-attachment: fixed; /* Fixed background */
-    width: auto;
-    height: 350px;
-  }
-  
-  
-  /* Section 1 */
-  .hero-2 {
     background-image: url('{{ site.baseurl }}/assets/images/genoa_alto.jpg');  
     background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
-    background-position: center;
-
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   
@@ -740,12 +713,28 @@ ul li {
     background-image: url('{{ site.baseurl }}/assets/images/beach.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: left;
     background-attachment: fixed; /* Fixed background */
     width: auto;
     height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+
+  
+/* Section 1 */
+.hero-4 {
+  background-image: url('{{ site.baseurl }}/assets/images/parapendio.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed; /* Fixed background */
+  width: auto;
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
   
   .row-test {
     margin-right: -15px;
@@ -803,7 +792,7 @@ ul li {
     }
   
     #countdown {
-      font-size: 18px;
+      font-size: 13pt;
       font-weight: bold;
       text-align: center;
       color: #fff;
@@ -855,8 +844,7 @@ ul li {
     overflow: cover;
     justify-content: space-evenly;
     align-items: center;
-    padding-left:15px;
-    padding-bottom:30px;
+    padding:0 15px 0 15px;
   }
   
   .p_list {
@@ -963,5 +951,11 @@ ul li {
     opacity: 1;  /* Make the text visible */
     pointer-events: auto;  /* Enable interaction (clicking) */
   }
-  
+
+  .h2_intro {
+    font-size: 13pt;
+    padding: 0;
+    margin-top: 20px;
+  }
+
 }
