@@ -599,10 +599,12 @@ ul li {
   
 
   .h2_info {
-    font-size: 19px;
+    padding-right: 50px;
+    font-size: 13pt;
     margin: 0;
-    text-align: center;
+    text-align: right;
     width: fit;
+    margin-left: auto;
     margin-bottom: 30px;
   }
   
@@ -951,8 +953,6 @@ ul li {
     opacity: 1;  /* Make the text visible */
     pointer-events: auto;  /* Enable interaction (clicking) */
   }
- 
-  
 
   .h2_intro {
     font-size: 13pt;
